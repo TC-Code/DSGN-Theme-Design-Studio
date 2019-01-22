@@ -1,8 +1,11 @@
 /* GLOBAL CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700');
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 .logo {
@@ -15,8 +18,9 @@ body {
 }
 
 .logo-text {
-  font-size: .8rem;
-  line-height: .8rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1vw;
+  line-height: 1vw;
 }
 
 .social-icons {
@@ -24,7 +28,7 @@ body {
 }
 
 .social-icons a {
-  font-size: 20px;
+  font-size: 2vw;
   padding: 2px;
   color: #7acec3;
 }
@@ -36,13 +40,13 @@ body {
 /* MENU */
 .menu {
   top: 50px;
-  right: 170px;
-  height: 125px;
+  right: 19.2vw;
+  height: 9px;
 }
 
 .burger {
-  width: 125px;
-  height: 125px;
+  width: 9vw;
+  height: 9vw;
   border: solid #fff 3px;
 }
 
@@ -72,9 +76,9 @@ body {
 }
 
 .hide {
-  right: 125px;
+  right: 9vw;
   width: 0px;
-  height: 125px;
+  height: 9vw;
   transition: all .5s ease;
   overflow: hidden;
 }
@@ -97,7 +101,28 @@ body {
   width: 575px;
 }
 
+.address,
+.email {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
+  font-size: 1vw;
+  line-height: 1.1vw;
+  text-transform: uppercase;
+}
 
+.address {
+  top: 19vw;
+  right: 22vw;
+}
 
+.email {
+  top: 28vw;
+  right: 12vw;
+}
 
 /* MEDIA QUERIES */
+@media (orientation: portrait) {
+  .changebg {
+    width: 450px;
+  }
+}
