@@ -1,0 +1,103 @@
+/* GLOBAL CSS */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-bottom: 4px;
+}
+
+.header {
+  background-color: rgb(233, 234, 226);
+}
+
+.logo-text {
+  font-size: .8rem;
+  line-height: .8rem;
+}
+
+.social-icons {
+  margin-top: 15%;
+}
+
+.social-icons a {
+  font-size: 20px;
+  padding: 2px;
+  color: #7acec3;
+}
+
+.header__right {
+  width: 100%;
+}
+
+/* MENU */
+.menu {
+  top: 50px;
+  right: 170px;
+  height: 125px;
+}
+
+.burger {
+  width: 125px;
+  height: 125px;
+  border: solid #fff 3px;
+}
+
+.burger span {
+  height: 3px;
+  width: 40px;
+  background-color: #fff;
+  transition: all .2s ease;
+}
+
+.burger span:nth-child(2) {
+  margin: 4px 0;
+}
+
+.burger-bar1 {
+  transform: rotate(45deg)translateY(3px);
+  transition: all .2s ease;
+}
+
+.burger-bar2 {
+  display: none;
+}
+
+.burger-bar3 {
+  transform: rotate(-45deg)translateY(-1px);
+  transition: all .2s ease;
+}
+
+.hide {
+  right: 125px;
+  width: 0px;
+  height: 125px;
+  transition: all .5s ease;
+  overflow: hidden;
+}
+
+.hide a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.change-burger-bg {
+  background-color: #f8c255;
+  border: none;
+  transition: all .5s ease;
+}
+
+.changebg {
+  transition: all .5s ease;
+  background-color: #f8c255;
+  width: 575px;
+}
+
+
+
+
+/* MEDIA QUERIES */
