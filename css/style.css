@@ -166,6 +166,23 @@ body {
   background-repeat: no-repeat
 }
 
+.sesann {
+  background-image: url('/images/projects/sesann.jpg');
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+.alessi {
+  background-color: rgb(206, 206, 206);
+  background-image: url('/images/projects/alessi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.timeline {
+  background-color: rgb(235, 178, 64);
+}
+
 /* MEDIA QUERIES */
 @media (orientation: portrait) {
   .changebg {
