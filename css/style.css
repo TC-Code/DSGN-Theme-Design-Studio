@@ -3,10 +3,13 @@
 
 html,
 body {
+  max-width: 1920px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
+
+
 
 .logo {
   margin-top: 50px;
@@ -101,6 +104,15 @@ body {
   width: 575px;
 }
 
+.menu a {
+  transition: .25s ease;
+}
+
+.menu a:hover {
+  transform: scale(1.25);
+  transition: .25s ease;
+}
+
 .address,
 .email {
   font-family: 'Roboto Condensed', sans-serif;
@@ -118,6 +130,40 @@ body {
 .email {
   top: 28vw;
   right: 12vw;
+}
+
+/* PROJECTS */
+
+.fondue {
+  background-color: rgb(255, 255, 255);
+  background-image: url('/images/projects/fondue.jpg');
+  background-size: cover;
+  background-position-x: right;
+  background-repeat: no-repeat
+}
+
+.potter {
+
+  background-color: rgb(223, 224, 217);
+}
+
+.tabano {
+  background-color: rgb(247, 247, 243)
+}
+
+.fiji {
+  background-color: rgb(255, 255, 255);
+}
+
+.chairandottoman,
+.louis {
+  background-color: rgb(234, 234, 234);
+}
+
+.chairandottoman {
+  background-image: url('/images/projects/chairandottoman.jpg');
+  background-size: cover;
+  background-repeat: no-repeat
 }
 
 /* MEDIA QUERIES */

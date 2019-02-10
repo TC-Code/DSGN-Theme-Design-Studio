@@ -30,3 +30,8 @@ const linkClick = document.querySelectorAll('.hide a');
     document.querySelector('.burger span:nth-child(3)').classList.toggle('burger-bar3');
   })
 })
+
+// 
+let rowHeight = document.querySelector('.header').clientHeight;
+
+console.log(rowHeight);
