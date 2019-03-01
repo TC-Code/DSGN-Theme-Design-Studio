@@ -9,8 +9,6 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-
-
 .logo {
   margin-top: 50px;
   margin-bottom: 4px;
@@ -167,6 +165,7 @@ body {
 }
 
 .sesann {
+  background-color: rgb(252, 252, 252);
   background-image: url('/images/projects/sesann.jpg');
   background-size: contain;
   background-repeat: no-repeat
@@ -181,6 +180,37 @@ body {
 
 .timeline {
   background-color: rgb(235, 178, 64);
+}
+
+/* STUDIO */
+
+.studio,
+.staff {
+  background-color: rgb(233, 234, 226);
+}
+
+
+.studio:last-child img {
+  float: left;
+  padding-top: 15%;
+  width: 70%;
+}
+
+/* STAFF */
+
+.designers img {
+  float: left;
+  padding-right: 20px;
+  padding-top: 15%;
+}
+
+/* FOOTER */
+
+/* GOOGLE MAPS */
+
+#map {
+  width: 100%;
+  height: 644px;
 }
 
 /* MEDIA QUERIES */
