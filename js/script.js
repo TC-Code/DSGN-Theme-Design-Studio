@@ -41,18 +41,168 @@ console.log(rowHeight);
 function initMap() {
   // The location of Uluru
   var uluru = {
-    lat: -118.1893341,
-    lng: 33.7652036
+    lat: 33.7652036,
+    lng: -118.1893341,
   };
   // The map, centered at Uluru
   var map = new google.maps.Map(
     document.getElementById('map'), {
-      zoom: 4,
-      center: uluru
+      zoom: 11,
+      center: uluru,
+      disableDefaultUI: true,
+      styles: [{
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#dbdcd5"
+          }]
+        },
+        {
+          "elementType": "labels.icon",
+          "stylers": [{
+              "visibility": "on"
+            }, {
+              "saturation": -100
+            },
+            {
+              "lightness": 35
+            },
+          ]
+        },
+        {
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#6b6d62"
+          }]
+        },
+        {
+          "elementType": "labels.text.stroke",
+          "stylers": [{
+            "color": "#cbccc6"
+          }]
+        },
+        {
+          "featureType": "administrative.land_parcel",
+          "stylers": [{
+            "color": "#cbccc6"
+          }]
+        },
+        {
+          "featureType": "administrative.land_parcel",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#cbccc6"
+          }]
+        },
+        {
+          "featureType": "administrative.land_parcel",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+              "color": "#6b6d62"
+            },
+            {
+              "weight": 0.5
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#cbccc6"
+          }]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#6b6d62"
+          }]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#cbccc6"
+          }]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#6b6d62"
+          }]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#cbccc6"
+          }]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#6b6d62"
+          }]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#e4e5e0"
+          }]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#6b6d62"
+          }]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#6b6d62"
+          }]
+        },
+        {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#9c9e93"
+          }]
+        },
+        {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#9c9e93"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#c2c3bc"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#6b6d62"
+          }]
+        }
+      ]
     });
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({
     position: uluru,
-    map: map
+    map: map,
+    icon: {
+      url: "images/map/pin.png",
+    }
   });
 }
