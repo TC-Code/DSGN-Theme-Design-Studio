@@ -6,8 +6,18 @@ body {
   max-width: 1920px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
+
+.section-title {
+  position: absolute;
+  top: 20vw;
+  left: 15vw;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* HEADER */
 
 .logo {
   margin-top: 50px;
@@ -19,7 +29,6 @@ body {
 }
 
 .logo-text {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 1vw;
   line-height: 1vw;
 }
@@ -113,7 +122,6 @@ body {
 
 .address,
 .email {
-  font-family: 'Roboto Condensed', sans-serif;
   color: #fff;
   font-size: 1vw;
   line-height: 1.1vw;
@@ -131,6 +139,41 @@ body {
 }
 
 /* PROJECTS */
+
+.projects-list {
+  position: absolute;
+  top: 10vw;
+  left: 6vw;
+  list-style: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2vw;
+
+}
+
+.projects-list__item {
+  line-height: 1.4vw;
+  cursor: pointer;
+  position: relative;
+}
+
+.projects-list__item:hover {
+  color: #000;
+}
+
+.projects-list__item:hover::before,
+.projects-list__item.active::before {
+  content: url('../images/projects/arrow-icon.png');
+  display: block;
+  padding-right: 8px;
+  position: absolute;
+  left: -30px;
+  top: 0vw;
+}
+
+.active {
+  color: #000;
+}
 
 .fondue {
   background-color: rgb(255, 255, 255);

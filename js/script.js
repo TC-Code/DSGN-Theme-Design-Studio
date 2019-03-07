@@ -33,10 +33,18 @@ const linkClick = document.querySelectorAll('.hide a');
 
 let rowHeight = document.querySelector('.header').clientHeight;
 
-console.log(rowHeight);
+// Poject list - arrow
+
+const projectsList = document.querySelector('.projects-list');
+projectsList.addEventListener('click', (e) => {
+  const listItems = document.querySelectorAll('.projects-list__item');
+  [...listItems].forEach(item => item.classList.remove('active'))
+  e.target.classList.add('active');
+
+
+})
 
 // Google Maps
-
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
