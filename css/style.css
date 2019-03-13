@@ -198,9 +198,22 @@ body {
   color: #000;
 }
 
-.projects-list__item:hover::before,
-.projects-list__item.active::before {
-  content: url('../images/projects/arrow-icon.png');
+.projects-list__item img {
+  display: none;
+  position: absolute;
+  left: -30px;
+  top: 0vw;
+}
+
+.projects-list__item .active-arrow {
+  display: block;
+}
+
+.active-arrow {
+  display: block;
+}
+
+.projects-list__item:hover img {
   display: block;
   padding-right: 8px;
   position: absolute;
@@ -451,13 +464,65 @@ body {
   background-color: rgb(235, 178, 64);
 }
 
+.timeline__box {
+  position: absolute;
+  top: 4vw;
+  left: 6vw;
+  text-transform: uppercase;
+}
+
+.timeline__list {
+  color: #fff;
+  font-size: 1vw;
+}
+
+.timeline__list span {
+  color: #000;
+}
+
+.timeline__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+.timeline__list li {
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+
+.timeline__list li:hover {
+  color: #000;
+}
+
+.timeline__list li img {
+  display: none;
+  position: absolute;
+  left: -2.2vw;
+  top: -.1vw;
+}
+
+.timeline__list li:hover img {
+  display: block;
+  padding-right: 1vw;
+}
+
+.timeline .timeline__active-arrow {
+  display: block;
+}
+
+.timeline__active-arrow {
+  display: block;
+}
+
 /* STUDIO */
 
 .studio,
 .staff {
   background-color: rgb(233, 234, 226);
 }
-
 
 .studio:last-child img {
   float: left;

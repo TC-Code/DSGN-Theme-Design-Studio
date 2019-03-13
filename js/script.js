@@ -36,13 +36,45 @@ let rowHeight = document.querySelector('.header').clientHeight;
 // Poject list - arrow
 
 const projectsList = document.querySelector('.projects-list');
+const listItems = document.querySelectorAll('.projects-list__item');
+const arrowHover = document.querySelectorAll('.projects-list__item img');
+
 projectsList.addEventListener('click', (e) => {
-  const listItems = document.querySelectorAll('.projects-list__item');
   [...listItems].forEach(item => item.classList.remove('active'))
   e.target.classList.add('active');
+});
 
-
+projectsList.addEventListener('mouseover', (e) => {
+  [...arrowHover].forEach(item => item.classList.remove('active-arrow'))
+  e.target.classList.remove('active-arrow');
 })
+
+projectsList.addEventListener('mouseleave', () => {
+  if (document.querySelector('.projects-list').classList.contains('active')) {} {
+    document.querySelector('.projects-list .active img').classList.add('active-arrow')
+  }
+});
+
+// Timleline
+const timelineList = document.querySelector('.timeline__list');
+const timelineListItems = document.querySelectorAll('.timeline__list li');
+const arrowHoverTimeline = document.querySelectorAll('.timeline__list li img');
+
+timelineList.addEventListener('click', (e) => {
+  [...timelineListItems].forEach(item => item.classList.remove('active'))
+  e.target.classList.add('active');
+});
+
+timelineList.addEventListener('mouseover', (e) => {
+  [...arrowHoverTimeline].forEach(item => item.classList.remove('timeline__active-arrow'))
+  e.target.classList.remove('timeline__active-arrow');
+})
+
+timelineList.addEventListener('mouseleave', () => {
+  if (document.querySelector('.timeline__list').classList.contains('active')) {} {
+    document.querySelector('.timeline__list .active img').classList.add('timeline__active-arrow')
+  }
+});
 
 // Google Maps
 // Initialize and add the map
