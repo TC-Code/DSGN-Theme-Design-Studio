@@ -1,8 +1,6 @@
 /* GLOBAL CSS */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:100,300&subset=latin-ext');
 
-
-
 html,
 body {
   max-width: 1920px;
@@ -15,6 +13,7 @@ body {
   position: absolute;
   top: 20vw;
   left: 15vw;
+  font-size: 3vw;
   text-transform: uppercase;
   color: #fff;
 }
@@ -525,17 +524,117 @@ body {
 }
 
 .studio:last-child img {
-  float: left;
-  padding-top: 15%;
-  width: 70%;
+  padding-top: 5vw;
+  width: 25vw;
+}
+
+.studio .about {
+  font-family: 'Roboto';
+  font-size: 1vw;
+  padding: 5vw 3vw 5vw 5vw;
+  line-height: 1vw;
+}
+
+.studio__awards {
+  width: 25vw;
+}
+
+.studio__awards h3 {
+  text-transform: uppercase;
+  font-size: 1vw;
+  border-bottom: 1px solid #bbb5b5;
+  margin: 3vw 0vw 2vw .3vw;
+}
+
+.studio__awards div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.studio__awards ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1vw;
+  text-transform: uppercase;
+  line-height: 1vw;
 }
 
 /* STAFF */
+
+.staff__about {
+  position: absolute;
+  top: 1vw;
+  right: -1vw;
+  width: 30vw;
+  font-family: 'Roboto';
+  font-size: 1vw;
+  padding: 5vw 3vw 5vw 5vw;
+  line-height: 1.2vw;
+}
+
+.staff__about h3 {
+  font-size: 1vw;
+  text-transform: uppercase
+}
+
+/* DESIGNERS */
 
 .designers img {
   float: left;
   padding-right: 20px;
   padding-top: 15%;
+  margin-bottom: 2vw;
+}
+
+.designers__about {
+  width: 18.8vw;
+  margin-top: 5vw;
+}
+
+.designers__about h4:first-of-type {
+  font-weight: 400;
+}
+
+.designers__about h4:nth-of-type(2) {
+  font-weight: 100
+}
+
+.designers__about h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.designers__about h4 {
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+
+.curriculum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vw;
+}
+
+.curriculum div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.curriculum img {
+  margin: 0 0 0 1vw;
+  cursor: pointer;
+  padding: 0;
+}
+
+.curriculum,
+.staff__socials a {
+  color: rgb(253, 80, 0);
+}
+
+.staff__socials a {
+  margin-left: .4vw;
 }
 
 /* NEWS */
