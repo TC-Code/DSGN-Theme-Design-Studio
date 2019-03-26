@@ -1,3 +1,4 @@
+// Menu
 const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', function () {
@@ -53,6 +54,21 @@ projectsList.addEventListener('mouseleave', () => {
   if (document.querySelector('.projects-list').classList.contains('active')) {} {
     document.querySelector('.projects-list .active img').classList.add('active-arrow')
   }
+});
+
+// Single project - show/hide
+const viewProject = document.querySelector('.fondue .view-project');
+const modalWrap = document.querySelector('.modal-wrap');
+const btnHideModal = document.querySelector('.fondue__details-hide');
+
+viewProject.addEventListener('click', () => {
+  modalWrap.classList.add('show');
+  document.body.style.overflow = "hidden";
+});
+
+btnHideModal.addEventListener('click', () => {
+  modalWrap.classList.remove('show');
+  document.body.style.overflow = "auto";
 });
 
 // Timleline

@@ -18,7 +18,7 @@ body {
   color: #fff;
 }
 
-.project-description {
+.project-description ul {
   text-transform: uppercase;
 }
 
@@ -85,40 +85,42 @@ body {
 
 /* MENU */
 .menu {
-  top: 50px;
-  right: 19.2vw;
+  top: 10%;
+  left: 35%;
   height: 9px;
 }
 
 .burger {
   width: 9vw;
   height: 9vw;
-  border: solid #fff 3px;
+  border: solid #e9eae2 0.15vw;
 }
 
 .burger span {
-  height: 3px;
-  width: 40px;
-  background-color: #fff;
+  height: .15vw;
+  width: 3vw;
+  background-color: #e9eae2;
   transition: all .2s ease;
 }
 
 .burger span:nth-child(2) {
-  margin: 4px 0;
+  margin: .35vw 0;
 }
 
-.burger-bar1 {
-  transform: rotate(45deg)translateY(3px);
+.burger .burger-bar1 {
+  transform: rotate(45deg)translateY(.1vw);
   transition: all .2s ease;
+  background-color: #fff;
 }
 
-.burger-bar2 {
+.burger .burger-bar2 {
   display: none;
 }
 
-.burger-bar3 {
-  transform: rotate(-45deg)translateY(-1px);
+.burger .burger-bar3 {
+  transform: rotate(-45deg)translateY(-.1vw);
   transition: all .2s ease;
+  background-color: #fff;
 }
 
 .hide {
@@ -144,7 +146,7 @@ body {
 .changebg {
   transition: all .5s ease;
   background-color: #f8c255;
-  width: 575px;
+  width: 50vw;
 }
 
 .menu a {
@@ -158,7 +160,7 @@ body {
 
 .address,
 .email {
-  color: #fff;
+  color: #e9eae2;
   font-size: 1vw;
   line-height: 1.1vw;
   text-transform: uppercase;
@@ -221,6 +223,63 @@ body {
 
 .active {
   color: #000;
+}
+
+/* FOUDE - SINGLE PROJECT */
+
+.modal-wrap {
+  display: none;
+}
+
+.show {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.fondue__details-hide {
+  position: absolute;
+  top: -5vw;
+  right: 10vw;
+  height: 5vw;
+  width: 5vw;
+  border: solid rgb(114, 112, 112) .1vw;
+}
+
+.fondue__details-hide span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background-color: rgb(114, 112, 112);
+  width: 3vw;
+  height: .1vw;
+}
+
+.fondue__details-hide span:first-child {
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.fondue__details-hide span:last-child {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.fondue__details {
+  background-color: #fff;
+}
+
+.fondue__details {
+  top: 10vw;
+}
+
+.fondue__details .project-description p {
+  padding-left: 40px;
+  font-size: 1vw;
+  line-height: 1vw;
 }
 
 /* FONDUE */
@@ -722,6 +781,10 @@ body {
 .footer__contact,
 .footer__socials {
   top: 8vw;
+}
+
+.footer__socials-logo {
+  margin-bottom: 4px;
 }
 
 .footer__socials-logo,
