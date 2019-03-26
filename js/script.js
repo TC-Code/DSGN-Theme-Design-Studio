@@ -34,6 +34,34 @@ const linkClick = document.querySelectorAll('.hide a');
 
 let rowHeight = document.querySelector('.header').clientHeight;
 
+// Menu - scroll to section
+const goToProjects = document.querySelector('.header__right .hide a:nth-child(2)')
+goToProjects.addEventListener('click', () => window.scrollTo({
+  top: document.querySelector('.projects').offsetTop,
+  left: 0,
+  behavior: 'smooth'
+}));
+
+const goToStudio = document.querySelector('.header__right .hide a:nth-child(3)')
+goToStudio.addEventListener('click', () => window.scrollTo({
+  top: document.querySelector('.studio').offsetTop,
+  left: 0,
+  behavior: 'smooth'
+}));
+
+const goToNews = document.querySelector('.header__right .hide a:nth-child(4)')
+goToNews.addEventListener('click', () => window.scrollTo({
+  top: document.querySelector('.news').offsetTop,
+  left: 0,
+  behavior: 'smooth'
+}));
+
+const goToFooter = document.querySelector('.header__right .hide a:nth-child(5)')
+goToFooter.addEventListener('click', () => window.scrollTo({
+  top: document.querySelector('.footer').offsetTop,
+  left: 0,
+  behavior: 'smooth'
+}));
 // Poject list - arrow
 
 const projectsList = document.querySelector('.projects-list');
