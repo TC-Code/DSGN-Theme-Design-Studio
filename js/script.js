@@ -62,8 +62,8 @@ goToFooter.addEventListener('click', () => window.scrollTo({
   left: 0,
   behavior: 'smooth'
 }));
-// Poject list - arrow
 
+// Poject list - arrow
 const projectsList = document.querySelector('.projects-list');
 const listItems = document.querySelectorAll('.projects-list__item');
 const arrowHover = document.querySelectorAll('.projects-list__item img');
@@ -97,6 +97,166 @@ viewProject.addEventListener('click', () => {
 btnHideModal.addEventListener('click', () => {
   modalWrap.classList.remove('show');
   document.body.style.overflow = "auto";
+});
+
+// Fondue likes counter
+const fondueHeart = document.querySelector('.fondue .heart img')
+
+const fondueAdd = (start = 121) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.fondue .heart-counter p').textContent = `${number}`;
+  }
+}
+const fondueCounter = fondueAdd();
+fondueHeart.addEventListener('click', fondueCounter);
+
+fondueHeart.addEventListener('click', () => {
+  fondueHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    fondueHeart.classList.remove('heart-animate');
+  }, 400);
+});
+
+// Potter likes counter
+const potterHeart = document.querySelector('.potter .heart img')
+
+const potterAdd = (start = 117) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.potter .heart-counter p').textContent = `${number}`;
+  }
+}
+const potterCounter = potterAdd();
+potterHeart.addEventListener('click', potterCounter);
+
+potterHeart.addEventListener('click', () => {
+  potterHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    potterHeart.classList.remove('heart-animate');
+  }, 400);
+});
+
+// Tabano likes counter
+const tabanoHeart = document.querySelector('.tabano .heart img')
+
+const tabanoAdd = (start = 210) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.tabano .heart-counter p').textContent = `${number}`;
+  }
+}
+const tabanoCounter = tabanoAdd();
+tabanoHeart.addEventListener('click', tabanoCounter);
+
+tabanoHeart.addEventListener('click', () => {
+  tabanoHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    tabanoHeart.classList.remove('heart-animate');
+  }, 400);
+});
+
+// Louis likes counter
+const louisHeart = document.querySelector('.louis .heart img')
+
+const louisAdd = (start = 244) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.louis .heart-counter p').textContent = `${number}`;
+  }
+}
+const louisCounter = louisAdd();
+louisHeart.addEventListener('click', louisCounter);
+
+louisHeart.addEventListener('click', () => {
+  louisHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    louisHeart.classList.remove('heart-animate');
+  }, 400);
+});
+
+// Chairandottoman likes counter
+const chairandottomanHeart = document.querySelector('.chairandottoman .heart img')
+
+const chairandottomanAdd = (start = 119) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.chairandottoman .heart-counter p').textContent = `${number}`;
+  }
+}
+const chairandottomanCounter = chairandottomanAdd();
+chairandottomanHeart.addEventListener('click', chairandottomanCounter);
+
+chairandottomanHeart.addEventListener('click', () => {
+  chairandottomanHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    chairandottomanHeart.classList.remove('heart-animate');
+  }, 400);
+});
+
+// Fiji likes counter
+const fijiHeart = document.querySelector('.fiji .heart img')
+
+const fijiAdd = (start = 376) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.fiji .heart-counter p').textContent = `${number}`;
+  }
+}
+const fijiCounter = fijiAdd();
+fijiHeart.addEventListener('click', fijiCounter);
+
+fijiHeart.addEventListener('click', () => {
+  fijiHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    fijiHeart.classList.remove('heart-animate');
+  }, 400);
+});
+
+// Sesann likes counter
+const sesannHeart = document.querySelector('.sesann .heart img')
+
+const sesannAdd = (start = 238) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.sesann .heart-counter p').textContent = `${number}`;
+  }
+}
+const sesannCounter = sesannAdd();
+sesannHeart.addEventListener('click', sesannCounter);
+
+sesannHeart.addEventListener('click', () => {
+  sesannHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    sesannHeart.classList.remove('heart-animate');
+  }, 400);
+});
+
+// Alessi likes counter
+const alessiHeart = document.querySelector('.alessi .heart img')
+
+const alessiAdd = (start = 394) => {
+  let number = start;
+  return () => {
+    number++;
+    document.querySelector('.alessi .heart-counter p').textContent = `${number}`;
+  }
+}
+const alessiCounter = alessiAdd();
+alessiHeart.addEventListener('click', alessiCounter);
+
+alessiHeart.addEventListener('click', () => {
+  alessiHeart.classList.add('heart-animate');
+  setTimeout(() => {
+    alessiHeart.classList.remove('heart-animate');
+  }, 400);
 });
 
 // Timleline

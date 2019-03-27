@@ -49,12 +49,35 @@ body {
   margin-right: 0.8vw;
 }
 
-.heart {
+.heart img {
   cursor: pointer;
 }
 
-/* HEADER */
+.heart-counter p {
+  color: rgb(253, 80, 0);
+}
 
+/* Heart animation */
+.heart-animate {
+  animation-name: heart;
+  animation-duration: .4s;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* HEADER */
 .logo {
   margin-top: 50px;
   margin-bottom: 4px;
@@ -177,7 +200,6 @@ body {
 }
 
 /* PROJECTS */
-
 .projects-list {
   position: absolute;
   top: 10vw;
@@ -226,7 +248,6 @@ body {
 }
 
 /* FOUDE - SINGLE PROJECT */
-
 .modal-wrap {
   display: none;
 }
@@ -291,7 +312,6 @@ body {
 }
 
 /* FONDUE */
-
 .fondue {
   background-color: rgb(255, 255, 255);
   background-image: url('../images/projects/fondue.jpg');
@@ -319,7 +339,6 @@ body {
 }
 
 /* POTTER */
-
 .potter .project-description {
   position: absolute;
   top: 2vw;
@@ -366,7 +385,6 @@ body {
 }
 
 /* TABANO */
-
 .tabano {
   background-color: rgb(247, 247, 243)
 }
@@ -385,12 +403,11 @@ body {
 
 .tabano .heart {
   position: absolute;
-  bottom: 5.3vw;
+  bottom: 3vw;
   left: 27vw;
 }
 
 /* FIJI */
-
 .fiji {
   background-color: rgb(255, 255, 255);
 }
@@ -409,7 +426,7 @@ body {
 
 .fiji .heart {
   position: absolute;
-  bottom: 2vw;
+  bottom: .3vw;
   left: 22.2vw;
 }
 
@@ -465,12 +482,11 @@ body {
 
 .chairandottoman .heart {
   position: absolute;
-  bottom: 2.5vw;
+  bottom: .5vw;
   left: 27vw;
 }
 
 /* SESANN */
-
 .sesann {
   background-color: rgb(252, 252, 252);
   background-image: url('../images/projects/sesann.jpg');
@@ -492,12 +508,11 @@ body {
 
 .sesann .heart {
   position: absolute;
-  bottom: 5.3vw;
+  bottom: 3vw;
   left: 31.5vw;
 }
 
 /* ALESSI */
-
 .alessi {
   background-color: rgb(206, 206, 206);
   background-image: url('../images/projects/alessi.jpg');
@@ -519,12 +534,11 @@ body {
 
 .alessi .heart {
   position: absolute;
-  bottom: 3vw;
+  bottom: .5vw;
   left: 15vw;
 }
 
 /* TIMELINE */
-
 .timeline {
   background-color: rgb(235, 178, 64);
 }
@@ -583,7 +597,6 @@ body {
 }
 
 /* STUDIO */
-
 .studio,
 .staff {
   background-color: rgb(233, 234, 226);
@@ -627,7 +640,6 @@ body {
 }
 
 /* STAFF */
-
 .staff__about {
   position: absolute;
   top: 1vw;
@@ -645,7 +657,6 @@ body {
 }
 
 /* DESIGNERS */
-
 .designers img {
   float: left;
   padding-right: 20px;
@@ -766,15 +777,11 @@ body {
 }
 
 /* FOOTER */
-
 .footer {
   background-color: rgb(233, 234, 226);
   height: 40vw;
   overflow: hidden;
 }
-
-/* GOOGLE MAPS */
-
 
 /* CONTACT*/
 .footer__contact {
