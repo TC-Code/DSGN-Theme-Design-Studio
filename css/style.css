@@ -837,6 +837,37 @@ body {
   font-size: 1vw;
 }
 
+/* Button go to top */
+.btnToTop {
+  display: none;
+  position: fixed;
+  right: 5vw;
+  bottom: 5vw;
+  width: 4vw;
+  height: 4vw;
+  border: solid .3vw #7acec3;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.showBtnToTop {
+  display: block;
+}
+
+.btnToTop:hover {
+  border: solid .2vw #7acec3;
+}
+
+.fa-chevron-up {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  color: #7acec3;
+  transition: .1s linear;
+}
+
 /* MEDIA QUERIES */
 @media (orientation: portrait) {
   .changebg {

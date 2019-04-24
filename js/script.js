@@ -280,6 +280,23 @@ timelineList.addEventListener('mouseleave', () => {
   }
 });
 
+// Button go to top
+const goToTop = document.querySelector('.btnToTop')
+goToTop.addEventListener('click', () => window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+}));
+
+// const showBtnToTop = window.innerHeight + 100;
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    goToTop.classList.add('showBtnToTop')
+  } else {
+    goToTop.classList.remove('showBtnToTop')
+  }
+});
+
 // Google Maps
 // Initialize and add the map
 function initMap() {
