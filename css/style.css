@@ -55,6 +55,7 @@ body {
 
 .heart-counter p {
   color: rgb(253, 80, 0);
+  text-align: center;
 }
 
 /* Heart animation */
@@ -224,7 +225,7 @@ body {
   display: none;
   position: absolute;
   left: -30px;
-  top: 0vw;
+  top: .1vw;
 }
 
 .projects-list__item .active-arrow {
@@ -240,7 +241,7 @@ body {
   padding-right: 8px;
   position: absolute;
   left: -30px;
-  top: 0vw;
+  top: 0.1vw;
 }
 
 .active {
@@ -334,7 +335,7 @@ body {
 
 .fondue .heart {
   position: absolute;
-  top: 27vw;
+  top: 20.5vw;
   left: 7vw;
 }
 
@@ -370,14 +371,14 @@ body {
 
 .potter .view-project {
   position: absolute;
-  top: 9.5vw;
+  top: 11vw;
   left: 2vw;
 }
 
 .potter .heart {
   position: absolute;
-  top: 12.5vw;
-  left: 6vw;
+  top: 13.5vw;
+  left: 6.5vw;
 }
 
 .potter {
@@ -398,13 +399,13 @@ body {
 .tabano .view-project {
   position: absolute;
   bottom: 5.2vw;
-  left: 17vw;
+  left: 19vw;
 }
 
 .tabano .heart {
   position: absolute;
-  bottom: 3vw;
-  left: 27vw;
+  bottom: -.2vw;
+  left: 23.8vw;
 }
 
 /* FIJI */
@@ -451,7 +452,7 @@ body {
 
 .louis .heart {
   position: absolute;
-  top: 15vw;
+  top: 13.5vw;
   left: 8vw;
   color: #fff;
 }
@@ -869,6 +870,216 @@ body {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    font-size: 1.2vw;
+  }
+
+  body.heart img {
+    width: 2vw;
+  }
+
+  .project-description ul {
+    line-height: 1.3vw;
+    font-size: 1.3vw;
+  }
+
+  .view-project::before {
+    position: relative;
+    top: .3vw;
+  }
+
+  .projects-list {
+    top: 10vw;
+    left: 1vw;
+  }
+
+  .projects-list__item {
+    line-height: 2vw;
+    font-size: 1.7vw;
+  }
+
+  .projects-list__item:hover img,
+  .projects-list__item img {
+    top: .2vw;
+  }
+
+  .header .logo-text {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .address,
+  .email {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .email {
+    top: 28vw;
+    right: 11vw;
+  }
+
+  .fondue .heart {
+    left: 8.2vw;
+  }
+
+  .potter .project-description p:first-of-type {
+    font-size: 1.4vw;
+  }
+
+  .potter .view-project {
+    top: 11vw;
+  }
+
+  .potter .heart {
+    top: 13.5vw;
+    left: 7.2vw;
+  }
+
+  .tabano .project-description {
+    bottom: 2vw;
+    left: -2.5vw;
+  }
+
+  .tabano .view-project {
+    bottom: 5vw;
+    left: 20vw;
+  }
+
+  .tabano .heart {
+    bottom: -.8vw;
+    left: 25vw;
+  }
+
+  .louis .view-project {
+    top: 13vw;
+    left: 4vw;
+  }
+
+  .louis .heart {
+    top: 15.5vw;
+    left: 9vw;
+  }
+
+  .chairandottoman .heart {
+    bottom: -.5vw;
+    left: 28vw;
+  }
+
+  .fiji .view-project {
+    bottom: 1vw;
+    left: 17vw;
+  }
+
+  .fiji .heart {
+    bottom: -1.9vw;
+    left: 28vw;
+  }
+
+  .sesann .project-description {
+    bottom: 0vw;
+    left: 0vw;
+  }
+
+  .sesann .view-project {
+    bottom: 2vw;
+    left: 25vw;
+  }
+
+  .sesann .heart {
+    bottom: -1vw;
+    left: 36vw;
+  }
+
+  .alessi .project-description {
+    top: 3vw;
+    left: 10vw;
+  }
+
+  .alessi .view-project {
+    left: 12vw;
+  }
+
+  .alessi .heart {
+    bottom: -.1vw;
+    left: 17vw;
+  }
+
+  .timeline__box {
+    top: 2.5vw;
+    left: 4vw;
+    font-size: 1.4vw;
+  }
+
+  .timeline__list li img {
+    left: -2.5vw;
+    top: -.2vw;
+  }
+
+  .timeline__list {
+    font-size: 1.4vw;
+  }
+
+  .studio .about {
+    font-size: 1.4vw;
+    padding: 2vw 3vw 2vw 2vw;
+    line-height: 1.4vw;
+  }
+
+  .studio .about p {
+    margin-bottom: .5vw;
+  }
+
+  .studio:last-child img {
+    padding-top: 2vw;
+    width: 26vw;
+  }
+
+  .studio__awards {
+    width: 26vw;
+  }
+
+  .studio__awards h3 {
+    font-size: 1.4vw;
+  }
+
+  .studio__awards ul {
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+  }
+
+  .staff__about h3 {
+    font-size: 1.4vw;
+  }
+
+
+  .staff__about {
+    right: -1vw;
+    font-size: 1.4vw;
+    padding: 2vw 3vw 2vw 2vw;
+  }
+
+  .news .caption-styles {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .news .read-more {
+    bottom: -1.5vw;
+  }
+
+  .footer__contact {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .footer .logo-text {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+}
+
 @media (orientation: portrait) {
   .changebg {
     width: 450px;
