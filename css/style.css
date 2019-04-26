@@ -875,7 +875,7 @@ body {
     font-size: 1.2vw;
   }
 
-  body.heart img {
+  body .heart img {
     width: 2vw;
   }
 
@@ -887,6 +887,17 @@ body {
   .view-project::before {
     position: relative;
     top: .3vw;
+  }
+
+  .address,
+  .email {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .email {
+    top: 28vw;
+    right: 11vw;
   }
 
   .projects-list {
@@ -909,31 +920,25 @@ body {
     line-height: 1.4vw;
   }
 
-  .address,
-  .email {
-    font-size: 1.4vw;
-    line-height: 1.4vw;
-  }
-
-  .email {
-    top: 28vw;
-    right: 11vw;
-  }
-
   .fondue .heart {
     left: 8.2vw;
   }
 
   .potter .project-description p:first-of-type {
     font-size: 1.4vw;
+    margin-bottom: .5vw;
+  }
+
+  .potter .project-description p:nth-of-type(2) {
+    font-size: 1.2vw;
   }
 
   .potter .view-project {
-    top: 11vw;
+    top: 12vw;
   }
 
   .potter .heart {
-    top: 13.5vw;
+    top: 14vw;
     left: 7.2vw;
   }
 
@@ -1058,6 +1063,256 @@ body {
     right: -1vw;
     font-size: 1.4vw;
     padding: 2vw 3vw 2vw 2vw;
+  }
+
+  .news .caption-styles {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .news .read-more {
+    bottom: -1.5vw;
+  }
+
+  .footer__contact {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .footer .logo-text {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+}
+
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+  body .view-project::before {
+    position: relative;
+    top: .25vw;
+    left: 0vw;
+  }
+
+  body .heart {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  body .heart img {
+    width: 2.5vw;
+  }
+
+  .header .logo-text {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .header .address p,
+  .header .email p {
+    display: none;
+  }
+
+  .project-description ul {
+    line-height: 1.4vw;
+    font-size: 1.4vw;
+  }
+
+  .projects-list {
+    top: 9vw;
+    left: .1vw;
+  }
+
+  .projects-list__item {
+    line-height: 2vw;
+    font-size: 1.9vw;
+  }
+
+  .projects-list__item:hover img,
+  .projects-list__item img {
+    top: -.3vw;
+  }
+
+  .fondue .project-description {
+    top: 2vw;
+    left: -2vw;
+  }
+
+  .fondue .view-project {
+    top: 17.5vw;
+    left: 3vw;
+  }
+
+  .fondue .heart {
+    left: 11vw;
+    top: 22vw;
+  }
+
+  .potter .project-description p:first-of-type {
+    font-size: 1.4vw;
+    margin-bottom: .5vw;
+  }
+
+  .potter .project-description p:nth-of-type(2) {
+    font-size: 1.2vw;
+  }
+
+  .potter .view-project {
+    top: 14vw;
+    left: 1vw;
+  }
+
+  .potter .heart {
+    top: 1vw;
+    left: 14vw;
+  }
+
+  .tabano .project-description {
+    bottom: -1vw;
+    left: -2.5vw;
+  }
+
+  .tabano .view-project {
+    bottom: 1vw;
+    left: 16vw;
+  }
+
+  .tabano .heart {
+    bottom: 4vw;
+    left: 25vw;
+  }
+
+  .louis .view-project {
+    top: 15vw;
+    left: 4vw;
+  }
+
+  .louis .heart {
+    top: 18.5vw;
+    left: 11vw;
+  }
+
+  .chairandottoman .project-description {
+    top: 3vw;
+    left: 19vw;
+  }
+
+  .chairandottoman .view-project {
+    bottom: 2.5vw;
+    left: 3vw;
+  }
+
+  .chairandottoman .heart {
+    bottom: -.5vw;
+    left: 21vw;
+  }
+
+  .fiji .project-description {
+    top: 1vw;
+    left: 12vw;
+  }
+
+  .fiji .view-project {
+    bottom: -1vw;
+    left: 10vw;
+  }
+
+  .fiji .heart {
+    bottom: -.5vw;
+    left: 28vw;
+  }
+
+  .sesann .project-description {
+    bottom: -1.5vw;
+    left: 0vw;
+  }
+
+  .sesann .view-project {
+    bottom: 2vw;
+    left: 25vw;
+  }
+
+  .sesann .heart {
+    bottom: 4vw;
+    left: 33vw;
+  }
+
+  .alessi .project-description {
+    top: 1vw;
+    left: 8vw;
+  }
+
+  .alessi .view-project {
+    left: 2vw;
+    bottom: 2vw;
+  }
+
+  .alessi .heart {
+    bottom: -1vw;
+    left: 20vw;
+  }
+
+  .timeline__box {
+    top: 1.5vw;
+    left: 4vw;
+    font-size: 2vw;
+  }
+
+  .timeline__list li img {
+    left: -3vw;
+    top: -.3vw;
+  }
+
+  .timeline__list {
+    font-size: 1.6vw;
+  }
+
+  .studio .about {
+    font-size: 1.6vw;
+    padding: 2vw 2vw 1vw 2vw;
+    line-height: 1.5vw;
+  }
+
+  .studio .about p {
+    margin-bottom: .5vw;
+  }
+
+  .studio:last-child img {
+    padding-top: 2vw;
+    width: 26vw;
+  }
+
+  .studio__awards {
+    width: 33vw;
+  }
+
+  .studio__awards h3 {
+    font-size: 1.6vw;
+  }
+
+  .studio__awards ul {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+
+  .staff__about h3 {
+    font-size: 1.4vw;
+  }
+
+  .staff__about {
+    right: 2vw;
+    font-size: 1.6vw;
+    line-height: 1.5vw;
+    padding: 2vw 2vw 2vw 2vw;
+  }
+
+  .staff__about p {
+    margin-bottom: .5vw;
+  }
+
+  .designers__about h4 {
+    font-size: 1.4vw;
   }
 
   .news .caption-styles {
