@@ -870,7 +870,13 @@ body {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (orientation: portrait) {
+  .changebg {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body {
     font-size: 1.2vw;
   }
@@ -889,6 +895,7 @@ body {
     top: .3vw;
   }
 
+  /* HEADER */
   .address,
   .email {
     font-size: 1.4vw;
@@ -900,6 +907,7 @@ body {
     right: 11vw;
   }
 
+  /* PROJECTS */
   .projects-list {
     top: 10vw;
     left: 1vw;
@@ -1011,6 +1019,7 @@ body {
     left: 17vw;
   }
 
+  /* TIMELINE */
   .timeline__box {
     top: 2.5vw;
     left: 4vw;
@@ -1026,6 +1035,7 @@ body {
     font-size: 1.4vw;
   }
 
+  /* STUDIO */
   .studio .about {
     font-size: 1.4vw;
     padding: 2vw 3vw 2vw 2vw;
@@ -1065,6 +1075,7 @@ body {
     padding: 2vw 3vw 2vw 2vw;
   }
 
+  /* NEWS */
   .news .caption-styles {
     font-size: 1.4vw;
     line-height: 1.4vw;
@@ -1074,6 +1085,7 @@ body {
     bottom: -1.5vw;
   }
 
+  /* FOOTER */
   .footer__contact {
     font-size: 1.4vw;
     line-height: 1.4vw;
@@ -1086,7 +1098,7 @@ body {
 }
 
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
 
   body .view-project::before {
@@ -1104,6 +1116,8 @@ body {
     width: 2.5vw;
   }
 
+  /* HEADER */
+
   .header .logo-text {
     font-size: 1.4vw;
     line-height: 1.4vw;
@@ -1114,6 +1128,7 @@ body {
     display: none;
   }
 
+  /* PROJECTS */
   .project-description ul {
     line-height: 1.4vw;
     font-size: 1.4vw;
@@ -1253,6 +1268,7 @@ body {
     left: 20vw;
   }
 
+  /* TIMELINE */
   .timeline__box {
     top: 1.5vw;
     left: 4vw;
@@ -1268,6 +1284,7 @@ body {
     font-size: 1.6vw;
   }
 
+  /* STUDIO */
   .studio .about {
     font-size: 1.6vw;
     padding: 2vw 2vw 1vw 2vw;
@@ -1296,6 +1313,7 @@ body {
     line-height: 1.4vw;
   }
 
+  /* STAFF */
   .staff__about h3 {
     font-size: 1.4vw;
   }
@@ -1315,6 +1333,7 @@ body {
     font-size: 1.4vw;
   }
 
+  /* NEWS */
   .news .caption-styles {
     font-size: 1.4vw;
     line-height: 1.4vw;
@@ -1324,6 +1343,7 @@ body {
     bottom: -1.5vw;
   }
 
+  /* FOOTER */
   .footer__contact {
     font-size: 1.4vw;
     line-height: 1.4vw;
@@ -1335,8 +1355,118 @@ body {
   }
 }
 
-@media (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 575px) {
+
+  /* HEADER */
+  .header {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .header .header__left {
+    padding: 0 10px;
+  }
+
+  .header .logo {
+    max-width: 25vw;
+    margin-top: 10vw;
+    margin-bottom: 4px;
+  }
+
+  .header .logo-text {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+
+  .header .social-icons {
+    visibility: hidden;
+  }
+
+  .header .bgchairs {
+    position: absolute;
+    top: 80vw;
+    right: -10vw;
+    max-width: 160vw;
+  }
+
+  /* MENU */
+  .header .header__right {
+    visibility: hidden;
+  }
+
+  .header__right .menu {
+    visibility: hidden;
+  }
+
+  .header__right .menu {
+    visibility: visible;
+    top: -25vw;
+    left: 75vw;
+  }
+
+  .header__right .menu .burger {
+    width: 11vw;
+    height: 11vw;
+    border: solid #7acec3 .8vw;
+    z-index: 5;
+  }
+
+  .burger span {
+    height: .5vw;
+    width: 5vw;
+    background-color: #7acec3;
+    transition: all .2s ease;
+  }
+
+  .burger span:nth-child(2) {
+    margin: 9% 0;
+  }
+
+  .burger .burger-bar1 {
+    transform: rotate(45deg)translateY(1px);
+    transition: all .2s ease;
+    background-color: #7acec3;
+  }
+
+  .burger .burger-bar3 {
+    transform: rotate(-45deg)translateY(-1px);
+    transition: all .2s ease;
+    background-color: #7acec3;
+  }
+
+  .hide {
+    flex-direction: column;
+    top: -50%;
+    right: 5vw;
+    width: 0px;
+    height: 50vw;
+    transition: all .2s ease;
+  }
+
+  .hide a {
+    font-size: 18px;
+    color: #7acec3;
+    text-decoration: none;
+  }
+
+  .change-burger-bg {
+    background-color: transparent;
+    border: none;
+    transition: all .2s ease;
+  }
+
   .changebg {
-    width: 450px;
+    transition: all .2s ease;
+    background-color: transparent;
+    width: 55vw;
+  }
+
+  /* PROJECTS */
+  .projects .projects-start {
+    height: 100vh;
+  }
+
+  .projects .projects-start .bgprojects {
+    height: 100vh;
   }
 }
