@@ -457,6 +457,10 @@ body {
   color: #fff;
 }
 
+.louissec {
+  display: none;
+}
+
 /* CHAIR AND OTTOMAN */
 .chairandottoman,
 .louis {
@@ -1468,5 +1472,154 @@ body {
 
   .projects .projects-start .bgprojects {
     height: 100vh;
+  }
+
+  .projects-list {
+    top: 30vw;
+    left: 8vw;
+    font-size: 6vw;
+  }
+
+  .projects-list__item {
+    line-height: 10vw;
+  }
+
+  .projects-list__item img {
+    top: 2.2vw;
+  }
+
+  .projects-list__item .active-arrow {
+    display: block;
+    top: 2.2vw;
+    width: 5.9vw;
+  }
+
+  .active-arrow {
+    display: block;
+  }
+
+  .projects-list__item:hover img {
+    top: 2.2vw;
+    width: 8vw;
+  }
+
+  .projects .section-title {
+    top: 130vw;
+    left: 40vw;
+    font-size: 10vw;
+  }
+
+  /* FONDUE */
+  .fondue {
+    height: 80vw;
+  }
+
+  .fondue .project-description {
+    position: absolute;
+    top: 4vw;
+    left: 1vw;
+  }
+
+  .fondue .view-project {
+    position: absolute;
+    top: 18vw;
+    left: 3vw;
+  }
+
+  .fondue .heart {
+    position: absolute;
+    top: 20.5vw;
+    left: 7vw;
+  }
+
+  /* LOUIS */
+  .louis>img {
+    width: 50vw;
+  }
+
+  .louis .project-description {
+    position: absolute;
+    top: 2.5vw;
+    left: 0.1vw;
+    color: #fff;
+  }
+
+  .louis .project-description span {
+    color: #fff;
+  }
+
+  .louis .view-project {
+    position: absolute;
+    top: 11vw;
+    left: 3.2vw;
+    color: #fff;
+  }
+
+  .louis .heart {
+    position: absolute;
+    top: 13.5vw;
+    left: 8vw;
+    color: #fff;
+  }
+
+  .louissec {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+    filter: FlipH;
+  }
+
+  .chairandottoman {
+    height: 80vw;
+  }
+
+  .potter {
+    height: 50vw;
+  }
+
+  .potter>img {
+    position: relative;
+    top: 5vw;
+    right: -10vw;
+    width: 80vw;
+  }
+
+  .tabano {
+    height: 80vw;
+    overflow: hidden;
+  }
+
+  .tabano>img {
+    position: relative;
+    right: -15vw;
+  }
+
+  .fiji {
+    height: 60vw;
+    overflow: hidden;
+  }
+
+  .fiji>img {
+    position: relative;
+    left: 10vw;
+  }
+
+  .timeline {
+    overflow: hidden;
+  }
+
+  .timeline>img {
+    position: relative;
+    top: -20px;
+    left: 20px;
+    height: 50vh;
+    transform: rotate(14deg);
+  }
+
+  .studio>img {
+    height: 50vh;
+    width: 100vw;
   }
 }
