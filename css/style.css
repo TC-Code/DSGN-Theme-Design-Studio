@@ -1359,7 +1359,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 575px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 575px) and (orientation: portrait) {
 
   /* HEADER */
   .header {
@@ -1475,27 +1475,18 @@ body {
   }
 
   .projects-list {
-    top: 30vw;
+    top: 15vw;
     left: 8vw;
     font-size: 6vw;
   }
 
   .projects-list__item {
-    line-height: 10vw;
+    line-height: 12vw;
   }
 
   .projects-list__item img {
     top: 2.2vw;
-  }
-
-  .projects-list__item .active-arrow {
-    display: block;
-    top: 2.2vw;
-    width: 5.9vw;
-  }
-
-  .active-arrow {
-    display: block;
+    visibility: hidden;
   }
 
   .projects-list__item:hover img {
@@ -1509,27 +1500,24 @@ body {
     font-size: 10vw;
   }
 
+  .project-description ul {
+    line-height: 3.3vw;
+    font-size: 3.3vw;
+  }
+
   /* FONDUE */
   .fondue {
     height: 80vw;
   }
 
-  .fondue .project-description {
-    position: absolute;
-    top: 4vw;
-    left: 1vw;
-  }
-
   .fondue .view-project {
-    position: absolute;
-    top: 18vw;
-    left: 3vw;
+    top: 40vw;
+    left: 15vw;
   }
 
   .fondue .heart {
-    position: absolute;
-    top: 20.5vw;
-    left: 7vw;
+    top: 50vw;
+    left: 30vw;
   }
 
   /* LOUIS */
@@ -1537,29 +1525,14 @@ body {
     width: 50vw;
   }
 
-  .louis .project-description {
-    position: absolute;
-    top: 2.5vw;
-    left: 0.1vw;
-    color: #fff;
-  }
-
-  .louis .project-description span {
-    color: #fff;
-  }
-
   .louis .view-project {
-    position: absolute;
-    top: 11vw;
-    left: 3.2vw;
-    color: #fff;
+    top: 3.5vw;
+    left: 60vw;
   }
 
   .louis .heart {
-    position: absolute;
-    top: 13.5vw;
-    left: 8vw;
-    color: #fff;
+    top: 12vw;
+    left: 75vw;
   }
 
   .louissec {
@@ -1571,9 +1544,26 @@ body {
     filter: FlipH;
   }
 
+  /* CHAIR AND OTTOMAN */
   .chairandottoman {
     height: 80vw;
   }
+
+  .chairandottoman .project-description {
+    left: 40vw;
+  }
+
+  .chairandottoman .view-project {
+    bottom: 8vw;
+    left: 10vw;
+  }
+
+  .chairandottoman .heart {
+    top: 63vw;
+    left: 50vw;
+  }
+
+  /* POTTER */
 
   .potter {
     height: 50vw;
@@ -1586,6 +1576,33 @@ body {
     width: 80vw;
   }
 
+  .potter .project-description {
+    top: 5vw;
+    left: 5vw;
+    width: 40vw;
+    line-height: 3vw;
+  }
+
+  .potter .project-description p:first-of-type {
+    font-size: 3vw;
+  }
+
+  .potter .project-description p:nth-of-type(2) {
+    font-size: 3vw;
+  }
+
+  .potter .view-project {
+    top: 35vw;
+    left: 5vw;
+  }
+
+  .potter .heart {
+    top: 32vw;
+    left: 40vw;
+  }
+
+  /* TABANO */
+
   .tabano {
     height: 80vw;
     overflow: hidden;
@@ -1595,6 +1612,18 @@ body {
     position: relative;
     right: -15vw;
   }
+
+  .tabano .project-description {
+    top: 10vw;
+    left: 5vw;
+  }
+
+  .tabano .heart {
+    left: 55vw;
+    bottom: -2vw;
+  }
+
+  /* FIJI */
 
   .fiji {
     height: 60vw;
@@ -1606,6 +1635,52 @@ body {
     left: 10vw;
   }
 
+  .fiji .project-description {
+    top: 8vw;
+    left: 42vw;
+  }
+
+  .fiji .view-project {
+    left: 20vw;
+  }
+
+  .fiji .heart {
+    bottom: -2vw;
+    left: 55vw;
+  }
+
+  /* SESANN */
+  .sesann {
+    height: 60vw;
+    overflow: hidden;
+  }
+
+  .sesann .view-project {
+    top: 31vw;
+    left: 50vw;
+  }
+
+  .sesann .heart {
+    left: 85vw;
+    bottom: 15vw;
+  }
+
+  /* ALESSI */
+  .alessi {
+    height: 60vw;
+    overflow: hidden;
+    background-size: auto;
+  }
+
+  .alessi .project-description {
+    left: 35vw;
+  }
+
+  .alessi .view-project {
+    left: 30vw;
+  }
+
+  /* TIMELINE */
   .timeline {
     overflow: hidden;
   }
@@ -1618,8 +1693,122 @@ body {
     transform: rotate(14deg);
   }
 
+  .timeline__box span {
+    font-size: 10vw;
+  }
+
+  .timeline__box .timeline__list {
+    position: absolute;
+    top: 15vw;
+    right: -40vw;
+    font-size: 7vw;
+    line-height: 12vw;
+  }
+
+  .timeline__box .timeline__list img {
+    visibility: hidden;
+  }
+
+  /* STUDIO */
   .studio>img {
     height: 50vh;
     width: 100vw;
+  }
+
+  .studio h3 {
+    top: 4vw;
+    left: 6vw;
+    font-size: 10vw;
+  }
+
+  .studio .about {
+    font-size: 4vw;
+    line-height: 4vw;
+    padding: 10vw;
+  }
+
+  .studio .studio__right img {
+    width: 100vw;
+  }
+
+  .studio .studio__awards h3 {
+    margin-top: 10vw;
+    margin-left: 10vw;
+  }
+
+  .studio .studio__awards {
+    width: 50vw;
+  }
+
+  .studio .studio__awards div {
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+  .studio .studio__awards div ul {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  /* STAFF */
+  .staff .staff__about h3 {
+    font-size: 4vw;
+  }
+
+  .staff .staff__about {
+    width: 100vw;
+    font-size: 4vw;
+    line-height: 4vw;
+    padding: 10vw;
+  }
+
+  .staff .designers img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .designers__about h4 {
+    font-size: 3vw;
+  }
+
+  .staff .designers div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .staff .designers .designers__about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 0;
+    margin-bottom: 4vw;
+    padding: 0 10vw;
+  }
+
+  .staff .designers .designers__about div:first-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .staff .designers .designers__about .curriculum div:first-of-type {
+    display: none;
+  }
+
+  .staff .designers .designers__about .curriculum .staff__socials a {
+    padding: 1vw;
+  }
+
+  /* BUTTON 'GO TO TOP' */
+  .btnToTop {
+    right: 10vw;
+    bottom: 10vw;
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .fa-chevron-up {
+    font-size: 6vw;
   }
 }
